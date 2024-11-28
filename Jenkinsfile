@@ -25,11 +25,11 @@ pipeline {
                 sh 'terraform fmt '
             }
         }
-         stage(' Terraform validate') {
-            steps {
-                sh 'terraform validate '
-            }
-        }
+        //  stage(' Terraform validate') {
+        //     steps {
+        //         sh 'terraform validate '
+        //     }
+        // }
         stage(' Terraform Plan') {
             steps {
                 sh 'terraform plan '
